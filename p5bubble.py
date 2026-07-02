@@ -7,8 +7,14 @@ from PIL import Image, ImageDraw, ImageFont, ImageTk
 from pynput import keyboard
 
 import os
+import sys
 
-DIALOG_PATH  = os.path.join(os.path.dirname(__file__), "bubble.png")
+if getattr(sys, 'frozen', False):
+    base_path = sys._MEIPASS
+else:
+    base_path = os.path.dirname(os.path.abspath(__file__))
+
+DIALOG_PATH  = os.path.join(base_path, "bubble.png")
 DIALOG_SCALE = 0.28
 FADE_AFTER   = 1.5
 FADE_DURATION = 0.4
