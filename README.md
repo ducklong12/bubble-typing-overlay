@@ -14,6 +14,13 @@ A lightweight, portable Python script that displays live-updating Persona 5-styl
 - Windows OS
 
 ## Installation
+
+### Method 1: Using the Pre-built Executable (Easy)
+1. Go to the **Releases** tab on the right side of this GitHub page.
+2. Download `P5_Bubble_Typing.exe`.
+3. Double click the `.exe` file to run it. No installation required!
+
+### Method 2: Running from Source Code
 1. Clone the repository.
 2. Install dependencies:
    ```cmd
@@ -25,4 +32,4 @@ A lightweight, portable Python script that displays live-updating Persona 5-styl
    ```
 
 ## Note
-Make sure `bubble.png` is in the same directory as the script.
+If you are running from source, make sure `bubble.png` is in the same directory as the script. The pre-built `.exe` already has the image bundled inside.
